@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Loan Department]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="testNGtutorial.Listeners"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Car Loan(failed)">
+    <parameter name="URL" value="https://google.com"/>
+    <classes>
+      <class name="testNGtutorial.day3">
+        <methods>
+          <include name="beforeevery"/>
+          <include name="afterclass"/>
+          <include name="afterevery"/>
+          <include name="beforeclass"/>
+          <include name="mobilesignincanlogin"/>
+        </methods>
+      </class> <!-- testNGtutorial.day3 -->
+    </classes>
+  </test> <!-- Car Loan(failed) -->
+</suite> <!-- Failed suite [Loan Department] -->
